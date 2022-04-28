@@ -1,6 +1,10 @@
 var img;
 let x1, y1, x2, y2, y3, y4;
 var ratio;
+let speed1 = 9;
+let speed2 = 8;
+let speed3 = 4;
+let speed4 = 5;
 
 function setup() {
     // createCanvas(1920, 1080);
@@ -24,7 +28,6 @@ function draw() {
     stroke(255, 255, 255);
     rect(0, 0, windowWidth, windowHeight);
 
-
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     imageMode(CENTER);
@@ -32,10 +35,10 @@ function draw() {
     image(deco2, x2 , y2); //400 800
     image(deco1, x1 + 340 , y3); //400 800
     image(deco2, x2 + 340 , y4); //400 800
-    y1 -= 9;
-    y2 -= 7;
-    y3 -= 4;
-    y4 -= 5;
+    y1 -= speed1; // 9
+    y2 -= speed2;//8
+    y3 -= speed3; //4
+    y4 -= speed4; // 5
     if (y1 < 0){
         y1 = 400;
     }
@@ -47,6 +50,19 @@ function draw() {
     }
     if (y4 < 0){
         y4 = 460;
+    }
+    if ((mouseX< 700) || (mouseY< 200) || (mouseY > 900)){
+        speed1 = 1.9;
+        speed2 = 1.8;
+        speed3 = 1.4;
+        speed4 = 1.5;
+    }
+    else {
+        speed1 = 9;
+        speed2 = 8;
+        speed3 = 4;
+        speed4 = 5;
+
     }
 
     image(arrowImg, mouseX, mouseY);

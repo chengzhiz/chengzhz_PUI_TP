@@ -23,8 +23,8 @@ function draw() {
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     // var ratio = map(mouseX, 0, windowWidth, 0.3, 0.6);
-
-    translate(1485,725);
+    push();
+    translate(1385,725);
     imageMode(CENTER);
     rotate(angle);
     image(front, -10 ,-10); //400 800
@@ -45,7 +45,9 @@ function draw() {
         velocity = 0.01;
 
     }
-    translate(-1485,-725);
+
+    pop();
+    // noRotate();
 
     imageMode(CENTER);
     image(arrowImg, mouseX, mouseY);

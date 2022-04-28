@@ -22,15 +22,20 @@ function draw() {
     // var s = map(mouseX, 0, windowWidth, 0, 380);
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
+    image(arrowImg, mouseX, mouseY);
     var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
     imageMode(CENTER);
     x = ratio;
-    translate (1020, 1000);
+    translate (900 * windowWidth/2045, 1000 * windowHeight/1220);
     rotate(x);
-    image(deco3, 0 ,0); //400 800
-    translate (-1020, -1020);
+    image(deco1, 0 ,0); //400 800
+    rotate(-x);
+    translate (windowWidth*220/2045, 0);
+    rotate(x);
+    image(deco2, 0 ,0); //400 800
 
-    image(arrowImg, mouseX, mouseY);
+
+
 
     // translate(-890,-975);
     // translate (200, 0);

@@ -21,7 +21,7 @@ function draw() {
     noTint();
     image(img, 0, 0, windowWidth, windowHeight); // 完全不透明
     image(placeholder, 0, 0, windowWidth, windowHeight);
-    tint(255, map(mouseX, 0, windowWidth, 0, 255));
+    tint(255, map(mouseX, windowWidth/4, windowWidth/2, 0, 255* 1080/windowWidth));
     image(answer, 0, 0, windowWidth, windowHeight);
     tint(255, 255);
     image(arrowImg, mouseX, mouseY);

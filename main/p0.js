@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw() {
-
     image(img, 0, 0); // 完全不透明
 
     // let dx = mouseX - img.width / 2 - offset;

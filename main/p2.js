@@ -14,23 +14,30 @@ function setup() {
     left = loadImage('p2/left.png');
     right = loadImage('p2/right.png');
     bg.resize(windowWidth, windowHeight);
+    left.resize(windowWidth, windowHeight);
+    right.resize(windowWidth, windowHeight);
     x1 = 0;
     x2 = 1600;
     arrowImg = loadImage("p0/cursor.png");
-
 }
 
 function draw() {
-    var s = map(mouseX, 0, windowWidth, 0, 380);
-    image(bg, 0, 0, windowWidth, windowHeight); //400 800
+    var s = map(mouseX, 400, 1000, 0, 380);
+    if (s > 380){
+        s = 380;
+    }
+    if (s < 230){
+        s = 230;
+    }
+    image(bg, 0, 0, windowWidth, windowHeight); //1940 1220
     // reach 400 and 800 for each image
 
     fill(255, 255, 255);
     stroke(255, 255, 255);
-    rect(280, 376, 1600, 560);
+    rect(280 * windowWidth/1940, 376 * windowHeight/1220, 1600 * windowWidth/1940, 570 * windowHeight/1220);
 
-    image(left, 80 + s, 380); //400 800
-    image(right, 1600 - 2 * s, 380);
+    image(left, (80 + s)* windowWidth/1940, 380* windowHeight/1220); //400 800
+    image(right, (1600 - 2 * s)* windowWidth/1940, 380* windowHeight/1220);
     image(arrowImg, mouseX, mouseY);
 
 }

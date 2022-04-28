@@ -9,8 +9,8 @@
 // https://editor.p5js.org/codingtrain/sketches/7SjPmXN2
 
 let images = [];
-var count1 = True;
-var count2 = True;
+var count1 = 0;
+var count2 = 0;
 
 
 function setup() {
@@ -37,72 +37,15 @@ function draw() {
 
     if (mouseIsPressed === true) {
         let d1 = dist(mouseX, mouseY, 700, 850)
-        if ((mouseButton === LEFT) && (d1 < 100)){
+        if  (d1 < 100){
             deco1 = deco4;
-            // if (count1 === True){
-            //     count1 = False;
-            //     deco1 = images[1]
-            // }
-            // else if(count1 === False){
-            //     count1 += True;
-            //     deco1 = images[0];
-            // }
-
-
         }
         let d2 = dist(mouseX, mouseY, 1400, 850)
-        if ((mouseButton === LEFT) && (d2 < 100)){
+        if (d2 < 100){
             deco2 = deco3;
-
         }
     }
     noTint();
     image(arrowImg, mouseX, mouseY);
 
 }
-
-class Bubble {
-    constructor(x, y, r = 50) {
-        this.x = x;
-        this.y = y;
-        this.r = r;
-        this.brightness = 0;
-    }
-
-    intersects(other) {
-        let d = dist(this.x, this.y, other.x, other.y);
-        return d < this.r + other.r;
-        // if (d < this.r + other.r) {
-        //   return true;
-        // } else {
-        //   return false;
-        // }
-    }
-
-    changeColor(bright) {
-        this.brightness = bright;
-    }
-
-    contains(px, py) {
-        let d = dist(px, py, this.x, this.y);
-        if (d < this.r) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    move() {
-        this.x = this.x + random(-2, 2);
-        this.y = this.y + random(-2, 2);
-    }
-
-    show() {
-        stroke(255);
-        strokeWeight(4);
-        fill(this.brightness, 125);
-        ellipse(this.x, this.y, this.r * 2);
-    }
-}
-
-

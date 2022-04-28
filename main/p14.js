@@ -7,7 +7,7 @@ function setup() {
     deco1 = loadImage('p14/deco1.png');
     deco2 = loadImage('p14/deco2.png');
     deco3 = loadImage('p14/deco3.png');
-    arrowImg = loadImage("p14/magnifier.png");
+    arrowImg = loadImage("p15/cursor.png");
 
     // front.resize(120,320);
     // arrowImg = loadImage("p10/deco2.png");

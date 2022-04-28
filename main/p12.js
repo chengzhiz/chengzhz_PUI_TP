@@ -36,8 +36,6 @@ function draw() {
     noTint();
     image(arrowImg, mouseX, mouseY);
 
-
-
     // translate (1020, 1000);
     // rotate(x);
     // image(deco3, 0 ,0); //400 800

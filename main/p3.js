@@ -11,7 +11,6 @@ function setup() {
     y = 800;
     front.resize(120,320);
     arrowImg = loadImage("p0/cursor.png");
-
 }
 
 function draw() {
