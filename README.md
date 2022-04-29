@@ -2,9 +2,15 @@
 
 ### -- An interactive zine created with bootstrap and p5.js library -- 
 
+![](/Users/chapter318/Desktop/S22/05-630 PUI/project2/PUItp/main/p20/bg.png)
+
+------
+
 
 
 ##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg #####  
+
+
 
 ##### Figma File https://www.figma.com/file/UzRmEatuae0A6mRJfYz0Af/design-minds-interactive-zine--chengzhz?node-id=0%3A1
 
@@ -12,9 +18,13 @@
 
 ##### Ripo Link: https://github.com/chengzhiz/chengzhz_PUI_TP
 
+
+
+------
+
 #### ------------ Part 1 ------------
 
-##### Description 
+##### #### Description ####
 
 Design Minds interactive zine is an interactive zine that explores what is design minds from a designer's perspective. Design minds is what designer think while doing their work. 
 
@@ -24,32 +34,38 @@ Design Minds interactive zine is an interactive zine that explores what is desig
 
 [Tagtet user] Anyone who's interested in design thinking and would like to read an interactive zine on this topic.
 
+------
+
 ### ------------ Part 2 ------------
 
 ##### Using the website ##### 
 Each page's instruction is as below:
 
-P0:  click on "next page"
-P1:  move the mouse from left to right to see the message from transparent to appear
-p2: move the mouse from left to right to see two parts combine together and form a shape
-p3: move the mouse from left to right to change the size of "theoretically and practically" component
-p4: see the daily hardware/softwares that designer use roaming around the webpage like bounding ball
-p5: move the mouse from left to right to see the brain growing bigger
-p6: see the widgets roaming around the webpage like bounding ball
-p7: see "thinking" component blink on the page
-p8: move the mouse from left to right to see the muscle grow bigger
-p9: move the mouse above the gas animation to make it move faster
-p10: see the component swing around
-p11: move the mouse around to see the eyes moving to the direction of the mouse
-p12: move the mouse from left to right to see each cycle appear at the top right
-p13: click on the flower to see it change to another one
-p14: move the mouse far away from the circle center to see the circle diffuses
-p15: see the blinking effect of the computer and also the recycle circle rotate
-p16: see the "past","present","future" words appear one after one
-p17: click on the webpage to see the messages appear one by one
-p18: click on the webpage many times to see the message appear gradually
-p19: move the mouse from left to right to see the message from transparent to appear
-p20: end page, click on"start again" to go to the first page or click on the "view non-interactive version" to see the pdf version.
+- P0:  click on "next page"
+- P1:  move the mouse from left to right to see the message from transparent to appear
+- p2: move the mouse from left to right to see two parts combine together and form a shape
+- p3: move the mouse from left to right to change the size of "theoretically and practically" component
+- p4: see the daily hardware/softwares that designer use roaming around the webpage like bounding ball
+- p5: move the mouse from left to right to see the brain growing bigger
+- p6: see the widgets roaming around the webpage like bounding ball
+- p7: see "thinking" component blink on the page
+- p8: move the mouse from left to right to see the muscle grow bigger
+- p9: move the mouse above the gas animation to make it move faster
+- p10: see the component swing around
+- p11: move the mouse around to see the eyes moving to the direction of the mouse
+- p12: move the mouse from left to right to see each cycle appear at the top right
+- p13: click on the flower to see it change to another one
+- p14: move the mouse far away from the circle center to see the circle diffuses
+- p15: see the blinking effect of the computer and also the recycle circle rotate
+- p16: see the "past","present","future" words appear one after one
+- p17: click on the webpage to see the messages appear one by one
+- p18: click on the webpage many times to see the message appear gradually
+- p19: move the mouse from left to right to see the message from transparent to appear
+- p20: end page, click on"start again" to go to the first page or click on the "view non-interactive version" to see the pdf version.
+
+### 
+
+------
 
 ### ------------ Part 3 ------------
 
@@ -60,13 +76,20 @@ p20: end page, click on"start again" to go to the first page or click on the "vi
 
 These two libraries makes my website interactive and good-looking with less efforts than vanilla javascript.
 
+### 
+
+------
+
 ### ------------ Part 4 ------------
 
 ###### Modifications ###### 
 
 1. Slicing each component inside the figma file
+1. Fine-tuned the ways of interaction in each page 
 
-2.Fine-tuned the ways of interaction in each page 
+
+
+------
 
 ### ------------ Part 5 ------------
 
