@@ -9,7 +9,12 @@
 
 
 
-##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg #####  
+##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg (high resolution version) #####  
+
+(compressed version for preview)
+https://user-images.githubusercontent.com/99673235/165879216-155cfe21-cac1-4397-a513-e39632c36382.mp4
+
+
 
 
 
