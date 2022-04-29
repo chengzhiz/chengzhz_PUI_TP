@@ -2,7 +2,7 @@
 
 ## -- An interactive zine created with bootstrap and p5.js library -- 
 
-![bg](/Users/chapter318/Desktop/S22/05-630 PUI/project2/PUItp/main/p20/bg.png)
+![bg](https://user-images.githubusercontent.com/99673235/165877989-51b475dc-fa87-421a-9a1f-95f92d32ae92.png)
 
 ------
 
