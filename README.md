@@ -12,7 +12,8 @@
 ##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg (high resolution version) #####  
 
 (compressed version for preview)
-https://user-images.githubusercontent.com/99673235/165879216-155cfe21-cac1-4397-a513-e39632c36382.mp4
+
+https://user-images.githubusercontent.com/99673235/165881135-34830006-534c-4542-846d-0a30b67a6573.mp4
 
 
 
