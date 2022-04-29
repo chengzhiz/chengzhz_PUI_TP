@@ -2,7 +2,8 @@
 
 ## -- An interactive zine created with bootstrap and p5.js library -- 
 
-![bg](https://user-images.githubusercontent.com/99673235/165877989-51b475dc-fa87-421a-9a1f-95f92d32ae92.png)
+![bg](https://user-images.githubusercontent.com/99673235/165878109-ecb5f121-2ea9-4f63-8c2b-31194f8a4719.png)
+
 
 ------
 
