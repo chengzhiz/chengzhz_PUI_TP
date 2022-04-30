@@ -32,15 +32,15 @@ function draw() {
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800\
     imageMode(CENTER);
-    image(deco1, 700+ random(-1,1), 850+random(-1,2));
-    image(deco2, 1400+ random(-1,1), 850 + random(-1,2));
+    image(deco1, 650 * windowWidth/ 1980 + random(-1,1), 850 * windowHeight/ 1220 + random(-1,2), windowWidth/5, windowHeight/3);
+    image(deco2, 1300 * windowWidth/ 1980 + random(-1,1), 850 * windowHeight/ 1220 + random(-1,2), windowWidth/5, windowHeight/3);
 
     if (mouseIsPressed === true) {
-        let d1 = dist(mouseX, mouseY, 700, 850)
+        let d1 = dist(mouseX, mouseY, 700 * windowWidth/ 1980, 850 * windowHeight/ 1220)
         if  (d1 < 100){
             deco1 = deco4;
         }
-        let d2 = dist(mouseX, mouseY, 1400, 850)
+        let d2 = dist(mouseX, mouseY, 1400 * windowWidth/ 1980 , 850 * windowHeight/ 1220)
         if (d2 < 100){
             deco2 = deco3;
         }

@@ -22,8 +22,8 @@ function draw() {
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     push();
-    translate(600 * 1980/windowWidth,670 *1220/windowHeight);
-    var ratio = map(mouseX, 0, windowWidth, 0.2, 0.8);
+    translate(600 * 1980/windowWidth, 700 *1220/windowHeight);
+    var ratio = map(mouseX, 0, windowWidth, 0.2, 0.7);
     if (ratio < 0.4) {
         ratio = 0.4;
     }
@@ -31,7 +31,7 @@ function draw() {
         ratio = 0.6;
     }
     imageMode(CENTER);
-    image(front,0,0,  ratio * windowWidth/3, ratio * windowHeight/(2)); //400 800
+    image(front,0,0, ratio * windowWidth/3, ratio * windowHeight/2); //400 800
     pop();
     image(arrowImg, mouseX, mouseY);
     // x = x + random(-1,1);

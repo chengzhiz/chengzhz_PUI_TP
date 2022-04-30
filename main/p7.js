@@ -24,7 +24,7 @@ function draw() {
     image(arrowImg, mouseX, mouseY);
     // var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
     tint(255, i);
-    image(deco, 540* windowWidth/2045, 460* windowHeight/1220); //400 800
+    image(deco, 540* windowWidth/2045, 460* windowHeight/1220, windowWidth/5, windowHeight/7); //400 800
     i += 10;
     if (i > 255){
         i = 0;

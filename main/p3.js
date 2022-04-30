@@ -7,9 +7,9 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     bg = loadImage('p3/bg.png'); // 加载图像
     front = loadImage('p3/object.png');
-    x = 500;
-    y = 800;
-    front.resize(120,320);
+    x = 0.3 * windowWidth;
+    y = 0.7 * windowHeight;
+    front.resize(120 * 1220 / windowWidth,320 * 1980/ windowHeight);
     arrowImg = loadImage("p0/cursor.png");
 }
 
@@ -21,6 +21,12 @@ function draw() {
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     var ratio = map(mouseX, 0, windowWidth, 0.8, 1.15);
+    if (ratio > 1.1){
+        ratio = 1.15
+    }
+    if (ratio < 0.9){
+        ratio = 0.9
+    }
     imageMode(CENTER);
     image(front, x, y, ratio * windowWidth/4, ratio * windowHeight/4); //400 800
     image(arrowImg, mouseX, mouseY);

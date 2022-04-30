@@ -26,49 +26,38 @@ function setup() {
 }
 
 function draw() {
-    // var s = map(mouseX, 0, windowWidth, 0, 380);
-    // fill(255, 255, 255);
-    // stroke(255, 255, 255);
-    // rect(0, 0, windowWidth, windowHeight);
-
     noTint();
     imageMode(CORNER);
-
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     fill(255, 255, 255);
     stroke(255, 255, 255);
-    // rect(0, 400, windowWidth, 500);
-
-
-    // var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
-    // image(arrowImg, mouseX, mouseY);
 
 }
 
 function mousePressed() {
     count += 1;
-    x1 = 130;
-    x2 = 200;
-    x3 = 400;
-    x4 = windowHeight - 250;
-    x5 = windowHeight - 200;
+    x1 = 130 * 1980/ windowWidth;
+    x2 = 200 * 1980/ windowWidth;
+    x3 = 300 * 1980/ windowWidth;
+    x4 = 800 * 1220/ windowHeight;
+    x5 = 800 * 1220/ windowHeight;
     if (count % 6 == 0) {
         clear();
     }
     if (count % 6 == 1) {
-        image(deco1, x1, 290 * windowHeight/1220); //430
+        image(deco1, 130 * 1980/ windowWidth, 290 * windowHeight/1220, windowWidth/ 3, windowHeight/ 4); //430
     }
     if (count % 6 == 2) {
-        image(deco2, x2, 540 * windowHeight/1220);//540
+        image(deco2, 200 * 1980/ windowWidth, 540 * windowHeight/1220, windowWidth/ 3, windowHeight/ 4);//540
     }
     if (count % 6 == 3) {
-        image(deco3, x3, 800 * windowHeight/1220);//590
+        image(deco3, 300 * 1980/ windowWidth, 800 * windowHeight/1220, windowWidth/ 3, windowHeight/ 4);//590
     }
     if (count % 6 == 4) {
-        image(deco4, x4, 290 * windowHeight/1220);//1350
+        image(deco4, 800 * 1220/ windowHeight, 290 * windowHeight/1220, windowWidth/ 3, windowHeight/ 4);//1350
     }
     if (count % 6 == 5) {
-        image(deco5, x5, 540 * windowHeight/1220);//1390
+        image(deco5, 800 * 1220/ windowHeight, 540 * windowHeight/1220, windowWidth/ 3, windowHeight/ 4);//1390
     }
 
 }

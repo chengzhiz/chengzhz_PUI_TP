@@ -14,7 +14,6 @@ function setup() {
 }
 
 function draw() {
-
     fill(255, 255, 255);
     stroke(255, 255, 255);
     rect(0, 0, windowWidth, windowHeight);
@@ -25,9 +24,7 @@ function draw() {
     image(answer, 0, 0, windowWidth, windowHeight);
     tint(255, 255);
     image(arrowImg, mouseX, mouseY);
-
     // clear();
-
     // var op = map(mouseX, 0, windowWidth, 0, 255)
     // fill(204, 101, 192, op);
     // tint(255, op)

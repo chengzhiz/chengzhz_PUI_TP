@@ -50,9 +50,8 @@ function draw() {
     stroke(255, 255, 255);
     rect(0, 0, windowWidth, windowHeight);
     imageMode(CORNER);
-    image(bg, 400, 400); //400 800
+    image(bg, 400* windowWidth/1980, 400* windowHeight/1220, windowWidth/3, windowHeight/3); //400 800
     imageMode(CENTER);
-
     x1 += x1speed;
     y1 += y1speed;
     if (x1 > windowWidth || x1 < 0) {
@@ -100,8 +99,8 @@ function draw() {
         y5speed = -y5speed;
     }
 
-    image(deco6, 1400 , 500 ); //400 800
-    image(deco1, x1 , y1 ); //400 800
+    image(deco6, 1400* windowWidth/1980, 500 * windowHeight/1220, windowWidth/5, windowHeight/4); //400 800
+    image(deco1, x1 , y1); //400 800
     image(deco2, x2, y2); //400 800
     image(deco3, x3, y3); //400 800
     image(deco4, x4, y4); //400 800

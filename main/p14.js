@@ -21,24 +21,21 @@ function draw() {
     noTint();
     imageMode(CORNER);
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
-
-
-
     imageMode(CENTER);
     tint(255, 50);
     image(deco1, 400, 800); //400 800
     // var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
-    tint(255, map(mouseX, 1100, 1300, 100, 255));
+    tint(255, map(mouseX, 1100 * windowWidth / 1980, 1300 * windowWidth/1980, 100, 255));
     image(deco1, 400, 800); //400 800
 
     tint(255, 30);
     image(deco2, 450, 750); //400 800
-    tint(255, map(mouseX, 1300, 1500, 150, 255)+100);
+    tint(255, map(mouseX, 1300 * windowWidth / 1980, 1500 * windowWidth/1980, 150, 255)+100);
     image(deco2, 450, 750); //400 800
 
     tint(255, 10);
     image(deco3, 500, 680); //400 800
-    tint(255, map(mouseX, 1500, 1700, 150, 255));
+    tint(255, map(mouseX, 1500 * windowWidth / 1980, 1700 * windowWidth/1980, 150, 255));
     image(deco3, 500, 680); //400 800
     noTint();
     image(arrowImg, mouseX, mouseY);

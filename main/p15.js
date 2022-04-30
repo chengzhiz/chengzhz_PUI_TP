@@ -26,7 +26,7 @@ function draw() {
     image(arrowImg, mouseX, mouseY);
     // var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
     tint(255, i);
-    image(deco, 1170* windowWidth/2045, 460* windowHeight/1220); //400 800
+    image(deco, 1170* windowWidth/2045, 460* windowHeight/1220, windowWidth/3, windowHeight/3); //400 800
     deco.resize(580,400);
     i += 15;
     if (i > 255){
@@ -37,7 +37,7 @@ function draw() {
     translate(1630* windowWidth/2045, 440* windowHeight/1220)
     rotate(angle);
     angle += 0.01;
-    image(deco2, 0, 0); //400 800
+    image(deco2, 0, 0, windowWidth/6, windowHeight/5); //400 800
 
 
 }

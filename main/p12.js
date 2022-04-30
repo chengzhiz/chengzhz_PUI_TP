@@ -25,14 +25,14 @@ function draw() {
 
     // var ratio = map(mouseX, 0, windowWidth, -0.3, 0.3);
     tint(255, map(mouseX, 1100, 1300, 0, 255));
-    image(deco1, 1100, 200); //400 800
-    image(deco2, 1100, 380); //400 800
-    tint(255, map(mouseX, 1300, 1500, 0, 255));
-    image(deco1, 1300, 200); //400 800
-    image(deco2, 1300, 380); //400 800
-    tint(255, map(mouseX, 1500, 1700, 0, 255));
-    image(deco1, 1500, 200); //400 800
-    image(deco2, 1500, 380); //400 800
+    image(deco1, 1100 * windowWidth/ 1980, 200 * windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
+    image(deco2, 1100 * windowWidth/ 1980, 380 * windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
+    tint(255, map(mouseX, 1300 * windowWidth/ 1980, 1500 * windowHeight/ 1220, 0, 255));
+    image(deco1, 1300 * windowWidth/ 1980, 200 * windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
+    image(deco2, 1300 * windowWidth/ 1980, 380 * windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
+    tint(255, map(mouseX, 1500* windowWidth/ 1980, 1700 * windowHeight/ 1220, 0, 255));
+    image(deco1, 1500 * windowWidth/ 1980, 200 * windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
+    image(deco2, 1500 * windowWidth/ 1980, 380* windowHeight/ 1220, windowWidth/14, windowHeight/7); //400 800
     noTint();
     image(arrowImg, mouseX, mouseY);
 

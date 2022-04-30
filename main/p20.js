@@ -5,7 +5,7 @@ var angle = 0;
 function setup() {
     // createCanvas(1920, 1080);
     createCanvas(windowWidth, windowHeight);
-    bg = ≈('p20/bg.png'); // 加载图像
+    bg = loadImage('p20/bg.png'); // 加载图像
 
     arrowImg = loadImage("p15/cursor.png");
     // front.resize(120,320);

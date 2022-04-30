@@ -24,10 +24,10 @@ function draw() {
     image(bg, 0, 0, windowWidth, windowHeight); //400 800
     // var ratio = map(mouseX, 0, windowWidth, 0.3, 0.6);
     push();
-    translate(1385,725);
+    translate(1385 * windowWidth / 1980, 725 * windowHeight/ 1220);
     imageMode(CENTER);
     rotate(angle);
-    image(front, -10 ,-10); //400 800
+    image(front, -10 ,-10, windowWidth/3, windowWidth/4); //400 800
     angle += velocity;
     if (velocity > 0){
         velocity -= 0.0001
@@ -38,12 +38,10 @@ function draw() {
     if (angle > 0.2){
         angle = 0.2;
         velocity = -0.01;
-
     }
     if (angle < -0.2){
         angle = -0.2;
         velocity = 0.01;
-
     }
 
     pop();
