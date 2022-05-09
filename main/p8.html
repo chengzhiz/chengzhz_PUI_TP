@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/globals.css" rel="stylesheet"/>
   <link href="bootstrap.css" rel="stylesheet"/>
+
+  <!--from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_tooltip_pos&stacked=h -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <title>Design Minds Zine-P8</title>
+
   <script src="../p5.js"></script>
   <!-- <script src="../addons/p5.sound.js"></script> -->
   <script src="p8.js"></script>
@@ -16,6 +23,12 @@
     <div class="col-md-12 text-center">
       <div class="col-md-12 text-center text-secondary">
         <button type="button" class="btn btn-light"><a href="p7.html">Prev Page</a></button>&nbsp Design Minds Interactive Zine P8/20 &nbsp
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="move the mouse from left to right to see the muscle grow bigger">Hint</a>
+        <script>
+          $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+          });
+        </script>
         <button type="button" class="btn btn-light"><a href="p9.html">Next Page</a></button>
       </div>
     </div>

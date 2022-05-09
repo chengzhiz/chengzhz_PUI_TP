@@ -1,21 +1,14 @@
-
-// this is the source code
-
 // Object Communication Part 2
 // Code! Programming with p5.js
 // The Coding Train / Daniel Shiffman
 // https://thecodingtrain.com/beginners/p5js/7.7-object-communication-2.html
 // https://youtu.be/5Q9cA0REztY
 // https://editor.p5js.org/codingtrain/sketches/7SjPmXN2
-
 let images = [];
-var count1 = 0;
-var count2 = 0;
-
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    bg = loadImage('p13/bg.png'); // 加载图像
+    bg = loadImage('p13/bg.png');
     deco1 = loadImage('p13/deco1.png');
     deco2 = loadImage('p13/deco2.png');
     deco3 = loadImage('p13/deco1.png');
@@ -30,11 +23,12 @@ function draw() {
     rect(0, 0, windowWidth, windowHeight);
 
     imageMode(CORNER);
-    image(bg, 0, 0, windowWidth, windowHeight); //400 800\
+    image(bg, 0, 0, windowWidth, windowHeight);
     imageMode(CENTER);
     image(deco1, 650 * windowWidth/ 1980 + random(-1,1), 850 * windowHeight/ 1220 + random(-1,2), windowWidth/5, windowHeight/3);
     image(deco2, 1300 * windowWidth/ 1980 + random(-1,1), 850 * windowHeight/ 1220 + random(-1,2), windowWidth/5, windowHeight/3);
-
+    // when clicking inside the boundary, the pic will change
+    // it's better to have a toggle
     if (mouseIsPressed === true) {
         let d1 = dist(mouseX, mouseY, 700 * windowWidth/ 1980, 850 * windowHeight/ 1220)
         if  (d1 < 100){

@@ -1,9 +1,5 @@
-// something to work on still
-var img;
-
 var ratio;
 let decos = [];
-
 
 let x1 = 100;
 let y1 = 100;
@@ -26,10 +22,9 @@ let x4speed = 8;
 let y4speed = 4;
 
 function setup() {
-    // createCanvas(1920, 1080);
     createCanvas(windowWidth, windowHeight);
-    bg = loadImage('p6/bg.png'); // 加载图像
-    bg.resize(1980,1220 );
+    bg = loadImage('p6/bg.png');
+    // these are the bouncing balls decorations
     deco1 = loadImage('p6/deco1.png');
     deco2 = loadImage('p6/deco2.png');
     deco3 = loadImage('p6/deco3.png');
@@ -39,11 +34,10 @@ function setup() {
 }
 
 function draw() {
-    // var s = map(mouseX, 0, windowWidth, 0, 380);
     fill(255, 255, 255);
     stroke(255, 255, 255);
     rect(0, 0, windowWidth, windowHeight);
-    image(bg, windowWidth/2, windowHeight/2, windowWidth, windowHeight); //400 800
+    image(bg, windowWidth/2, windowHeight/2, windowWidth, windowHeight);
     x1 += x1speed;
     y1 += y1speed;
     if (x1 > windowWidth || x1 < 0) {
@@ -80,10 +74,11 @@ function draw() {
     if (y4 > windowHeight || y4 < 50) {
         y4speed = -y4speed;
     }
-    image(deco1, x1 , y1); //400 800
-    image(deco2, x2, y2); //400 800
-    image(deco3, x3, y3); //400 800
-    image(deco4, x4, y4); //400 800
+    // these are the bouncing balls decorations
+    image(deco1, x1 , y1);
+    image(deco2, x2, y2);
+    image(deco3, x3, y3);
+    image(deco4, x4, y4);
     image(arrowImg, mouseX, mouseY);
 }
 

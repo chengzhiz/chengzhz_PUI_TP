@@ -3,9 +3,9 @@ let x, y;
 var ratio;
 
 function setup() {
-    // createCanvas(1920, 1080);
     createCanvas(windowWidth, windowHeight);
-    bg = loadImage('p8/bg.png'); // 加载图像
+    bg = loadImage('p8/bg.png');
+    // the muscle
     front = loadImage('p8/deco.png');
     x = 500;
     y = 800;
@@ -14,15 +14,11 @@ function setup() {
 }
 
 function draw() {
-    // var s = map(mouseX, 0, windowWidth, 0, 380);
     fill(255, 255, 255);
     stroke(255, 255, 255);
     rect(0, 0, windowWidth, windowHeight);
-
     imageMode(CORNER);
-    image(bg, 0, 0, windowWidth, windowHeight); //400 800
-    push();
-    translate(600 * 1980/windowWidth, 700 *1220/windowHeight);
+    image(bg, 0, 0, windowWidth, windowHeight);
     var ratio = map(mouseX, 0, windowWidth, 0.2, 0.7);
     if (ratio < 0.4) {
         ratio = 0.4;
@@ -31,22 +27,11 @@ function draw() {
         ratio = 0.6;
     }
     imageMode(CENTER);
-    image(front,0,0, ratio * windowWidth/3, ratio * windowHeight/2); //400 800
+    push();
+    // the muscle
+    image(front,600 *windowWidth/1980, 780 * windowHeight/ 1220, ratio * windowWidth/3, ratio * windowHeight/2);
     pop();
     image(arrowImg, mouseX, mouseY);
-    // x = x + random(-1,1);
-    // y = y + random(-1,1);
-    // let angle1 = radians(45);
-    // rotate(angle1);
-    // angleRotate += 0.25;
-    // reach 400 and 800 for each image
-
-    // fill(255, 255, 255);
-    // stroke(255, 255, 255);
-    // rect(200, 380, 1600, 560);
-    //
-    // image(left, 80 + s, 360); //400 800
-    // image(right, 1600 - 2 * s, 360);
 }
 
 

@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/globals.css" rel="stylesheet"/>
   <link href="bootstrap.css" rel="stylesheet"/>
+<!--from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_tooltip_pos&stacked=h -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <title>Design Minds Zine-P1</title>
   <style>
     body {
@@ -19,9 +24,15 @@
 
 <body>
   <main>
-    <div class="col-md-12 text-center text-secondary">
+    <div class="col-md-12 text-center">
     <button type="button" class="btn btn-light"><a href="p0.html">Prev Page</a></button>&nbsp Design Minds Interactive Zine P1/20 &nbsp
+      <a href="#" data-toggle="tooltip" data-placement="bottom" title="move the mouse from left to right to see the message from transparent to appear">Hint</a>
     <button type="button" class="btn btn-light"><a href="p2.html">Next Page</a></button>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
     </div>
   </main>
 </body>
