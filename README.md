@@ -1,14 +1,21 @@
 # Welcome to Design Minds interactive zine! : ) 
 
-### -- An interactive zine created with bootstrap and p5.js library -- 
+## -- An interactive zine created with bootstrap and p5.js library -- 
 
-![bg](/Users/chapter318/Desktop/S22/05-630 PUI/project2/PUItp/main/p20/bg.png)
+![bg](https://user-images.githubusercontent.com/99673235/165878109-ecb5f121-2ea9-4f63-8c2b-31194f8a4719.png)
+
 
 ------
 
 
 
-##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg #####  
+##### Video: https://www.youtube.com/watch?v=wiizuZMXxgg (high resolution version) #####  
+
+(compressed version for preview)
+
+https://user-images.githubusercontent.com/99673235/165881135-34830006-534c-4542-846d-0a30b67a6573.mp4
+
+
 
 
 
@@ -28,11 +35,11 @@
 
 Design Minds interactive zine is an interactive zine that explores what is design minds from a designer's perspective. Design minds is what designer think while doing their work. 
 
-[Purpose]I made this zine interactive to showcase how I define design minds after five years of design training and practice. It has 20 pages, each page has one sentence. 
+[Purpose]  I made this zine interactive to showcase how I define design minds after five years of design training and practice. It has 20 pages, each page has one sentence. 
 
-[How it's engaging]User can have fun while reading this interactive zine by clicking or moving the mouse. Each page is playful. Compared with traditional zine that I printed out, design minds interactive zine is more easy to share and deliver to other people from afar. 
+[How it's engaging]  User can have fun while reading this interactive zine by clicking or moving the mouse. Each page is playful. Compared with traditional zine that I printed out, design minds interactive zine is more easy to share and deliver to other people from afar. 
 
-[Tagtet user] Anyone who's interested in design thinking and would like to read an interactive zine on this topic.
+[Tagtet user]   Anyone who's interested in design thinking and would like to read an interactive zine on this topic.
 
 ------
 
